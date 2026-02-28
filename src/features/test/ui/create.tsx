@@ -9,7 +9,7 @@ export const TestCreate = () => {
 
   const submit = async (body: TestBody) => {
     try {
-      await mutateAsync(body)
+      await mutateAsync({ body })
     } catch (error) {
       return Promise.reject(error)
     }
